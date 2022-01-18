@@ -86,3 +86,57 @@ section.right h4 {
 section.right p {
   margin: 1rem 0;
 }
+
+section.right iframe {
+  border-radius: 20px;
+}
+
+/* mainset second page */
+
+.secondMain {
+  flex-direction: column;
+  width: 100%;
+}
+
+section.one,
+section.two,
+section.three {
+  padding: 2rem;
+}
+
+/* position test */
+.test {
+  position: relative;
+  left: 1rem;
+}
+
+.math1 {
+  color: red;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+/* mainset thrid page  */
+
+.thridMain {
+  /* width: 100%; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.top {
+  padding: 2rem;
+}
+
+section.downleft {
+  width: 30%;
+}
+
+section.downright {
+  width: 60%;
+}
+
+section.downleft,
+section.downright {
+  padding: 1.5rem 1rem 5rem 1rem;
+}
