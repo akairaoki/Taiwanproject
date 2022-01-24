@@ -6,19 +6,10 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-}
-
 /* header */
 header {
   background: #c4c4c4;
-  width: 100%;
+  /* width: 100%; */
   padding: 1rem;
 }
 
@@ -43,7 +34,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 0.5rem 0.75rem;
+  padding: 1rem;
 }
 
 nav ul li a {
@@ -65,6 +56,7 @@ nav ul li a:hover {
 main {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 section.left,
@@ -76,6 +68,7 @@ section.right {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1 1 200px;
 }
 
 section.right h4 {
@@ -89,6 +82,22 @@ section.right p {
 
 section.right iframe {
   border-radius: 20px;
+}
+
+section.left {
+  flex: 4 1 350px;
+}
+
+#curve_chart {
+  width: 100%;
+  height: 80%;
+}
+
+@media screen and (max-width: 550px) {
+  #curve_chart {
+    width: 100%;
+    height: 35%;
+  }
 }
 
 /* mainset second page */
@@ -138,5 +147,61 @@ section.downright {
 
 section.downleft,
 section.downright {
-  padding: 1.5rem 1rem 5rem 1rem;
+  padding: 1.5rem 1rem 6rem 1rem;
+}
+
+/* mainset fourth page */
+
+.fourthMain {
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.fourthMain img {
+  margin: 2rem 0;
+}
+
+.fourthTitle {
+  font-size: 1.5rem;
+}
+
+.fourthTitle,
+.fourthIf {
+  font-weight: bold;
+}
+
+.fourthIf {
+  padding-top: 1rem;
+}
+
+.fourthMain ul li {
+  list-style-type: none;
+}
+
+.fourthMain ul li a {
+  text-decoration: none;
+}
+
+/* mainset fifth page */
+
+.girlfriend {
+  width: 45vh;
+  height: 50vh;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.CNjiko {
+  padding: 0.3rem 0;
+  font-size: 1.2rem;
+}
+
+.ENjiko {
+  padding: 0.3rem 0;
+  font-size: 1.2rem;
+}
+
+section.fifthleft,
+section.fifthright {
+  padding: 2rem;
 }
